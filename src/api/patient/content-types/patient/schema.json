@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patients",
+  "info": {
+    "singularName": "patient",
+    "pluralName": "patients",
+    "displayName": "patient"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string",
+      "required": true
+    },
+    "DOB": {
+      "type": "date",
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
