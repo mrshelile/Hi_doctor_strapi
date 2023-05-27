@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medical_records",
+  "info": {
+    "singularName": "medical-record",
+    "pluralName": "medical-records",
+    "displayName": "medical_record"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "doctor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::doctor.doctor"
+    },
+    "patient": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::patient.patient"
+    },
+    "dateOfVisit": {
+      "type": "date"
+    },
+    "diaognosis": {
+      "type": "text"
+    },
+    "treatmentPlan": {
+      "type": "text"
+    },
+    "medicationPrescribed": {
+      "type": "text"
+    },
+    "labResults": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

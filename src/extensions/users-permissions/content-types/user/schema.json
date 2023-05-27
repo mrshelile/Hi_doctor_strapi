@@ -78,6 +78,24 @@
     "full_name": {
       "type": "string",
       "required": true
+    },
+    "doctor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::doctor.doctor",
+      "inversedBy": "user"
+    },
+    "patient": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::patient.patient",
+      "inversedBy": "user"
+    },
+    "provider_rep": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::provider.provider",
+      "inversedBy": "user"
     }
   }
 }
