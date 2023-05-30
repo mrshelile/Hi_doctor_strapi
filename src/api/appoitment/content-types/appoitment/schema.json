@@ -4,7 +4,8 @@
   "info": {
     "singularName": "appoitment",
     "pluralName": "appoitments",
-    "displayName": "appoitment"
+    "displayName": "appoitment",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -30,6 +31,9 @@
     },
     "appointmentNotes": {
       "type": "text"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }
