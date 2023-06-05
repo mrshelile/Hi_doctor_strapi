@@ -25,6 +25,15 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user",
       "mappedBy": "patient"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "id_number": {
+      "type": "biginteger"
+    },
+    "contacts": {
+      "type": "string"
     }
   }
 }

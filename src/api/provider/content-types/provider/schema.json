@@ -12,19 +12,20 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "token": {
-      "type": "string"
-    },
     "user": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user",
       "mappedBy": "provider_rep"
     },
-    "doctors": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::doctor.doctor"
+    "contacts": {
+      "type": "string"
+    },
+    "id_number": {
+      "type": "biginteger"
+    },
+    "full_name": {
+      "type": "string"
     }
   }
 }

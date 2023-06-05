@@ -4,7 +4,8 @@
   "info": {
     "singularName": "doctor",
     "pluralName": "doctors",
-    "displayName": "doctor"
+    "displayName": "doctor",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,20 @@
       "type": "string",
       "required": false
     },
-    "token": {
-      "type": "string"
-    },
     "user": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user",
       "mappedBy": "doctor"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "contacts": {
+      "type": "string"
+    },
+    "id_number": {
+      "type": "biginteger"
     }
   }
 }

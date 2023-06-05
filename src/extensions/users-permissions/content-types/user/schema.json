@@ -65,20 +65,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "national_id_number": {
-      "type": "biginteger",
-      "required": true,
-      "unique": true
-    },
-    "contacts": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "full_name": {
-      "type": "string",
-      "required": true
-    },
     "doctor": {
       "type": "relation",
       "relation": "oneToOne",
