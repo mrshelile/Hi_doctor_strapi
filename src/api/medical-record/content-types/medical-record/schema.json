@@ -4,7 +4,8 @@
   "info": {
     "singularName": "medical-record",
     "pluralName": "medical-records",
-    "displayName": "medical_record"
+    "displayName": "medical_record",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,9 +21,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::patient.patient"
-    },
-    "dateOfVisit": {
-      "type": "date"
     },
     "diaognosis": {
       "type": "text"
